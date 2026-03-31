@@ -324,6 +324,8 @@
 
 本项目目前处于理论框架与概念验证（PoC）阶段。未来我们将逐步开源以下模块的伪代码与参考实现：
 
+> 现实进展补充：这一方向并不只停留在理论层面。以 [MiniMax](https://www.minimax.io/news/minimax-m27-en) 为例，其已经公开讨论模型与 agent harness 的自演化流程；而像 [Floatboat](https://floatboat.ai/) 这样的 agent-native workspace 平台，也可以被视为把个人工作流、长期记忆与可复用技能系统化的先驱尝试。
+
 - 执行驱动的评价器 (Execution-based Evaluator): 放弃 LLM 模糊打分，建立基于代码执行结果（Pass/Fail/Crash）的硬损失计算模块。
 - 双轴归因分析器 (Dual-Axis Attributor): 针对复杂 Agent 崩溃日志，实现工具层与规则层的责任分离判定。
 - 对抗性案例生成器 (Adversarial Document Augmenter): 用于测试生成规则鲁棒性的文档结构扰动工具。
@@ -335,4 +337,4 @@
 
 ---
 
-<div align="right"><sub>by 广西大学</sub></div>
+<h3 align="right">by 广西大学</h3>
