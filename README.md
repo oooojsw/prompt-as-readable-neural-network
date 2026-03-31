@@ -1,7 +1,21 @@
-# 提示词 ——> 提示词工程 ——> 提示词系统：可读的神经网络 (Prompt as a Readable Neural Network)
+<div align="center">
+
+# 提示词 ——> 提示词工程 ——> 提示词系统：可读的神经网络
+
+### Prompt as a Readable Neural Network
 
 > 一个关于大模型时代应用层架构演进的深度思考与未来推演
 
+[![Status](https://img.shields.io/badge/Status-Theory%20Draft-0F172A?style=for-the-badge)](#manifesto)
+[![Topic](https://img.shields.io/badge/Topic-Prompt%20System-1D4ED8?style=for-the-badge)](#section-2)
+[![Focus](https://img.shields.io/badge/Focus-Textual%20Backpropagation-047857?style=for-the-badge)](#section-3)
+[![License](https://img.shields.io/badge/License-CC%20BY%204.0-7C3AED?style=for-the-badge)](./LICENSE)
+
+</div>
+
+---
+
+<a id="manifesto"></a>
 ## 核心宣言 (Manifesto)
 
 在大型语言模型（LLM）的浪潮中，我们见证了从简单的“提示词（Prompt）”到复杂的“提示词工程（Prompt Engineering）”，再到如今庞大的“提示词系统（Prompt System / Agentic Workflows）”的演进。
@@ -20,16 +34,23 @@
 
 我们坚信，下一个时代的智能体进化，不是单纯依赖底层模型参数的 Fine-tuning，而是通过“提示词反向传播”实现的专家规则体系（Skill/System Prompt）的自动蒸馏与自我演化。
 
+---
+
 ## 目录 (Table of Contents)
 
-- 从文本指令到神经网络：范式的转变
-- 提示词系统的“神经网络”解构
-- 自然语言空间的反向传播算法 (Textual Backpropagation)
-- 提示词系统中的“过拟合”与正则化约束
-- 提示词网络的“小型化”与“注意力蒸馏”
-- 未来推演：自演化智能体的终极形态
-- 结语与开源计划
+| 章节 | 跳转 |
+| --- | --- |
+| 从文本指令到神经网络：范式的转变 | [前往阅读](#section-1) |
+| 提示词系统的“神经网络”解构 | [前往阅读](#section-2) |
+| 自然语言空间的反向传播算法 (Textual Backpropagation) | [前往阅读](#section-3) |
+| 提示词系统中的“过拟合”与正则化约束 | [前往阅读](#section-4) |
+| 提示词网络的“小型化”与“注意力蒸馏” | [前往阅读](#section-5) |
+| 未来推演：自演化智能体的终极形态 | [前往阅读](#section-6) |
+| 结语与开源计划 | [前往阅读](#section-7) |
 
+---
+
+<a id="section-1"></a>
 ## 1. 从文本指令到神经网络：范式的转变
 
 ### 1.1 历史的重演：从汇编到高级语言
@@ -61,6 +82,9 @@
 
 提示词系统 = 用自然语言编写的神经网络。
 
+---
+
+<a id="section-2"></a>
 ## 2. 提示词系统的“神经网络”解构
 
 为了让这个理论站得住脚，我们需要将深度学习中的经典概念，一一映射到提示词系统中。
@@ -106,6 +130,9 @@
 
 注意力衰减（Weight Scaling Down）： 将非核心规则折叠，或使用更平淡的语气描述。
 
+---
+
+<a id="section-3"></a>
 ## 3. 自然语言空间的反向传播算法 (Textual Backpropagation)
 
 既然确立了等价关系，最激动人心的部分来了：如何在这个由文字构成的网络中进行反向传播？
@@ -146,6 +173,9 @@
 
 文本学习率 (Textual Learning Rate)： 为了防止优化器大模型一次性把提示词改得面目全非，我们需要限制“步长”。定义 TLR = N，表示一次迭代最多只能增加、删除或修改 N 条规则/句子。
 
+---
+
+<a id="section-4"></a>
 ## 4. 提示词系统中的“过拟合”与正则化约束
 
 这是构建自动化提示词系统（Auto-Prompt System）时最致命的问题。
@@ -201,6 +231,9 @@
 
 这种硬约束强制剪掉了所有违反底层逻辑的“捷径（Spurious Correlations）”演化方向。
 
+---
+
+<a id="section-5"></a>
 ## 5. 提示词网络的“小型化”与“注意力蒸馏”
 
 随着规则库的不断反向传播和自动扩充，提示词系统可能会变得极为庞大（几万到十几万字）。这带来两个问题：
@@ -238,6 +271,9 @@
 
 结论：改变一段话在提示词中的重复次数或位置（前后排版），就是在这个自然语言的神经网络中，显式地调整神经元之间的连接权重和注意力分配矩阵。
 
+---
+
+<a id="section-6"></a>
 ## 6. 未来推演：自演化智能体的终极形态
 
 基于上述理论框架，我们对未来的 Agent 架构演进做出如下推演：
@@ -248,11 +284,7 @@
 
 人类只需要提供：原始素材（输入）+ 预期结果（输出/目标）+ 基础工具集（API）。
 
-系统将自动启动一个 “冷启动 
- 执行测试 
- 结果归因 
- 文本反向传播 
- 规则凝练” 的闭环。
+系统将自动启动一个 “冷启动<br>执行测试<br>结果归因<br>文本反向传播<br>规则凝练” 的闭环。
 
 最终自动生成一套对于人类可能不可读（千万字级别、高度复杂），但对于底层 LLM 极其高效的**“黑盒专家技能包（Skill Prompt System）”**。
 
@@ -275,6 +307,9 @@
 
 这标志着软件工程进入了一个全新阶段：代码和自然语言在统一的优化框架下共同进化。
 
+---
+
+<a id="section-7"></a>
 ## 7. 结语与开源计划
 
 提示词，从来不只是咒语，它是通往大模型潜意识的神经元突触。
@@ -298,4 +333,6 @@
 
 本文档为初步草案，所有关于反向传播、过拟合及网络小模型的论述均基于对当前 LLM-as-Optimizer 前沿方向的理论推演。
 
-by 广西大学
+---
+
+<div align="right"><sub>by 广西大学</sub></div>
